@@ -1,0 +1,210 @@
+
+*{
+	padding: 0;
+	margin: 0;
+}
+.nav{
+	height: 600px;
+	width: 15%;
+	background: #263a53;
+	position: fixed;
+}
+.nav .logo{
+	width: 100%;
+	height: 100px;
+}
+.nav .logo img {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.nav .nav-bar{
+	width: 100%;
+}
+.nav .nav-bar ul{
+	padding: 2px 10px;
+	margin-left: 5px;
+}
+.nav .nav-bar ul li{
+	list-style: none;
+	padding: 10px 10px;
+}
+.nav .nav-bar ul li a{
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 18px;
+}
+/* container */
+.container{
+	background: #fbf6f6;
+	width: 85%;
+	height: auto;
+	float: right;
+}
+.container .title{
+	height: 40px;
+	width: 90%;
+	margin: 1% 1%;
+}
+.container .title p{
+	margin-left: 5%;
+	line-height: 40px;
+	font-weight: bold;
+	font-size: 24px;
+}
+.container .container-content{
+	margin: 1% 5%;
+	width: 90%;
+	height: auto;
+	display: flex;
+}
+.container-content-left{
+	width: 70%;
+	height: auto;
+}
+.wrab{
+	background: #ffffff;
+	padding: 2% 3%;
+	margin-top: 3%;
+	border: 1px solid #edeaea;
+	box-shadow: 0px 2px #e3dada;
+}	
+.wrab .wrab-title{
+	margin-bottom: 2%;
+}
+.wrab .wrab-title p{
+	font-weight: 600;
+	font-size: 18px;
+}
+.wrab .wrab-input{
+	height: 25px;
+}
+.wrab .wrab-input input{
+	border: none;
+	height: 100%;
+	font-size: 18px;
+	width: 90%;
+	position: relative;
+	padding: 4px 40px;
+}
+.wrab .wrab-input input::placeholder{
+	font-size: 12px;
+}
+.wrab .wrab-input i{
+	position: absolute;
+	z-index: 1;
+	color: #f3e5e5;
+	line-height: 25px;
+	margin-left: 1%;
+	margin-top: 0.3%;
+}
+/* list item */
+.wrab-list{
+	background: #fbf6f6;
+	border: 1px solid #edeaea;
+}
+.wrab-list table{
+	width: 100%;
+	height: auto;
+	background: #FFFFFF;
+}
+.wrab-list table thead {
+	background: #fbf6f6;
+	border-bottom: 1px solid #fbf6f6;
+	border-top: 1px solid #fbf6f6;
+}
+.wrab-list table tbody{
+	background: #FFFFFF;
+	text-align: center;
+}
+.wrab-list  td{
+	border:  1px solid #FFFFFF;
+}
+.wrab-list  th,td{
+	padding: 10px 10px;
+}
+.wrab-list td select{
+	width: 50px;
+	height: 20px;
+}
+.wrab-list td input{
+	width: 50px;
+	height: 20px;
+	text-align: right;
+}
+.wrab-list .price input{
+	height: 20px;
+	width: 100px;
+}
+.wrab-list td a{
+	text-decoration: none;
+	color: #cec7c7;
+	cursor: pointer
+}
+
+.container-content-left .wrab-list-content{
+	background: #ffffff;
+	padding: 2% 2%;
+	margin-top: 2%;
+}
+.container-content-left .wrab-list-content table{
+	width: 100%;
+}
+.container-content-left .wrab-list-content table tbody{
+	float: right;
+	margin-right: 10%;
+}
+.container-content-left .wrab-list-content table tbody tr td select{
+	border: none;
+	color: blue;
+	font-weight: 600;
+	font-size: 15px;
+	background: none;
+}
+
+.container-content-right{
+	width: 30%;
+	height: auto;
+}
+.container-content-right .wrab-right{
+	background: #ffffff;
+	padding: 2% 3%;
+	margin-top: 7%;
+	margin-left: 3%;
+	border: 1px solid #edeaea;
+	box-shadow: 0px 2px #e3dada;
+}
+.wrab-right .wrab-title-right{
+	margin-bottom: 2%;
+}
+.wrab-right .wrab-title-right p{
+	font-weight: 600;
+	font-size: 18px;
+}
+.wrab-right .wrab-select-right{
+	padding: 2% 2%;
+}
+.wrab-right .wrab-select-right .select-content{
+	padding: 1% 2%;
+}
+.wrab-right .wrab-select-right .select-content select{
+	width: 80%;
+	height: 20px;
+}
+.wrab-right .wrab-select-right .select-content input{
+	width: 90%;
+	height: 30px;
+}
+.submit{
+	background: #ffffff;
+	margin: 1% 5%;
+	width: 90%;
+	height: auto;
+	text-align: center;
+	padding: 1% 2%;
+}
+.submit button{
+	height:30px;
+	width: 50px;
+	cursor: pointer;
+}
