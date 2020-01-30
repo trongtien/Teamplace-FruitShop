@@ -4,10 +4,14 @@
 	margin: 0;
 }
 .nav{
-	height: 600px;
+	height: 100%;
 	width: 15%;
 	background: #263a53;
 	position: fixed;
+}
+.nav-bar{
+	position: absolute;
+	display: none;
 }
 .nav .logo{
 	width: 100%;
@@ -34,12 +38,56 @@
 	color: #FFFFFF;
 	font-size: 18px;
 }
+.nav .setting{
+	position: absolute;
+	background: red;
+	height: 50px;
+	width: 100%;
+	bottom: 0;
+}
 /* container */
 .container{
 	background: #fbf6f6;
 	width: 85%;
 	height: auto;
 	float: right;
+}
+.container-product{
+	width: 90%;
+	margin: auto;
+	height: auto;
+}
+.container-grib{
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(250px, 200px));
+	grid-gap: 10px;
+	padding: 10px;
+	box-sizing: border-box;	
+	height: auto;
+	margin: auto;
+	width: 90%;
+}
+.grib-item{
+	background: #FFFFFF;
+	border: 1px solid #3333;
+	overflow: hidden;
+	padding: 24px 0px 24px 24px;
+	border-radius: 8px;
+	box-shadow: 2px 2px #3333;
+	display: flex;
+}
+.grib-item .grib-icon{
+	font-size: 50px;
+	width: 40%;
+	border-right: 1px solid #3333;
+	align-items: center;
+	text-align: center;
+}
+.grib-item .grib-content{
+	width: 60%;
+	font-size: 45px;
+	align-items: center;
+	text-align: center;
 }
 .container .title{
 	height: 40px;
@@ -116,6 +164,13 @@
 .wrab-list table tbody{
 	background: #FFFFFF;
 	text-align: center;
+}
+.wrab-list table tbody tr{
+	border-bottom: 1px solid #333;
+}
+.wrab-list table tbody tr td img{
+	height: 80px;
+	width: 80px;
 }
 .wrab-list  td{
 	border:  1px solid #FFFFFF;
@@ -205,6 +260,9 @@
 }
 .submit button{
 	height:30px;
-	width: 50px;
+	width: 60px;
 	cursor: pointer;
+	border-radius: 5px;
+	background: #076de9;
+	font-weight: 600;
 }
