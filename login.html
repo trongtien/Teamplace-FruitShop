@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="public/css/style.css">
+	<link rel="stylesheet" href="public/awesome/css/all.min.css">
+	<title>Index</title>
+</head>
+<body>
+	<div class="comforts">
+			<div class="comforts-message">
+				<div class="message-icon">
+					<p>
+						<i class="fab fa-facebook-messenger"></i>
+					</p>
+				</div>
+				<div class="chat-message">
+					<div class="chat-message-header">
+						<p>South Fruit</p>
+						<div class="btn-close">
+							<span><i id="close" class="fas fa-times"></i></span>
+						</div>
+					</div>
+					<div class="chat-message-content">
+						
+					</div>
+					<div class="chat-message-text">
+						<div class="input-text">
+							<input type="text" placeholder="Nhập tin nhắn">
+						</div>
+						<div class="btn-message-tool">
+							<p><i class="far fa-images"></i></p>
+							<p><i class="far fa-smile-beam"></i></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="arrow-up">
+				<p><i class="fas fa-arrow-up"></i></p>
+			</div>
+		
+	</div>
+	<div class="header">
+		<div class="nav">
+			<div class="nav-left">
+				<div class="navContent" onclick="toggle()">
+					<div class="title">
+						<p>DANH MỤC</p>
+					</div>
+					<div class="huburger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			<div class="nav-right">
+				<div class="navContent" onclick="toggle()">
+					<div class="title">
+						<p>MENU</p>
+					</div>
+					<div class="huburger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="nav-content">
+			<div class="navbar-content">
+				<ul>
+					<li><a href="">GIỚI THIỆU</a></li>
+					<li><a href="">HƯỚNG DẪN MUA HÀNG</a></li>
+					<li><a href="">TIN TỨC</a></li>
+					<li><a href="">HỎI ĐÁP</a></li>
+					<li><a href="">LIÊN HỆ</a></li>
+					<li><a href="">ĐĂNG NHẬP</a></li>
+					<li><a href="">ĐĂNG KÝ THÀNH VIÊN</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="nav-wrap">
+			<div class="nav-wrap-logo">
+				<a href="">
+					<img src="public/image/logo.png" alt="">
+				</a>
+			</div>
+			<div class="nav-wrap-search">
+				<div class="nav-wrap-search-input">
+					<input type="text" placeholder="Search">
+				</div>
+				<div class="nav-wrap-search-btn">
+					<button><i class="fas fa-search"></i></button>
+				</div>
+			</div>
+			<div class="nav-wrap-cart">
+				<a href="">
+					<span>0 sp</span>	
+					<span><i class="fas fa-shopping-cart"></i></span>
+				</a>
+			</div>
+		</div>
+		<div class="nav-bar">
+			<div class="nav-bar-menu">
+				<ul>
+					<li><a href="">TRANG CHỦ</a></li>
+					<li><a href="">TRÁI CÂY MIỀN NAM</a></li>
+					<li><a href="">TRÁI CÂY MIỀN BẮC</a></li>
+					<li><a href="">TRÁI CÂY NGOẠI NHẬP</a></li>
+					<li><a href="">TRÁI CÂY CÚNG</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="slide">
+		<div class="slide-container">
+			<img src="public/image/slide1.jpg" alt="" class="slide-img">
+			<img src="public/image/slide2.jpg" alt="" class="slide-img">
+			<img src="public/image/slide3.jpg" alt="" class="slide-img">
+			
+		</div>
+		<div class="slide-btn">
+			<button class="btn-prev" onclick="prevSlide()">
+				<i class="fas fa-angle-double-left"></i>
+			</button>
+			<button class="btn-next" onclick="nextSlide()" >
+				<i class="fas fa-angle-double-right"></i>
+			</button>
+		</div>
+	</div>
+	<div class="container">		
+		<div class="tab">
+            <div class="tab-container">
+                <div class="tab-button">
+                    <div class="tab-submit">
+                        <p onclick="showPanel(0)">Đăng Nhập</p>
+                    </div>
+                    <div class="tab-submit">
+                        <p onclick="showPanel(1)">Đăng Ký</p>
+                    </div>
+                </div>
+                <div class="tab-panel">
+                    <div class="tab-panel-contact">
+                        <div class="input-login">
+                            <label>Email</label>
+                            <input type="text">
+                        </div>
+                        <div class="input-login">
+                            <label>Password</label>
+                            <input type="text">
+                        </div>
+                        <div class="button-submit">
+                            <button>Đăng nhập</button>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel-contact">
+                        <div class="input-login">
+                            <label>Email</label>
+                            <input type="text">
+                        </div>
+                        <div class="input-login">
+                            <label>Password</label>
+                            <input type="text">
+                        </div>
+                        <div class="button-submit">
+                            <button>Đăng Ký</button>
+                        </div>
+                    </div>
+                </div>
+            </div>       
+        </div>
+		<div class="blog">
+			<div class="title">
+				<p>BLOG Ẩm Thực</p>
+			</div>
+			<div class="blog-container">
+				<div class="blog-item">
+					<div class="item-img">
+						<img src="public/image/dk.jpg" alt="">
+					</div>
+					<h3>Mai Duy Khang</h3>
+				</div>
+			</div>		
+        </div>
+        <div class="container-box">
+			<div class="container-header-box">
+				<h2>icon</h2>
+				<h3>Vận chuyển miễn phí</h3>
+				<p>Vận chuyển miễn phí trong nội thành, tính phí giá rẻ ngoài tỉnh theo yêu cầu</p>
+			</div>
+			<div class="container-header-box">
+				<h2>icon</h2>
+				<h3>Chất lượng sản phẩm</h3>
+				<p>Đảm bảo sản phẩm rau củ quả tươi xanh và sạch, theo chuẩn quốc tế ban hành</p>
+			</div>
+			<div class="container-header-box">
+				<h2>icon</h2>
+				<h3>An toàn vệ sinh</h3>
+				<p>100% không chất bảo quản thuốc trừ sâu và phân bón đọc hại tránh gây tổn hại đến sức khỏe</p>
+			</div>
+		</div>
+		<div class="contact">
+			<div class="contact-title">
+				<h1>Liên hệ với chúng tôi</h1>
+			</div>
+			<div class="container-box">
+				<div class="container-header-box">
+					<h2><img src="public/image/dk.jpg" alt=""></h2>
+					<h3>Mai Duy Khang</h3>
+					<p>Mai Duy Khang</p>
+					<p>Mai Duy Khang</p>
+				</div>
+				<div class="container-header-box">
+					<h2><img src="public/image/dk.jpg" alt=""></h2>
+					<h3>Mai Duy Khang</h3>
+					<p>Mai Duy Khang</p>
+					<p>Mai Duy Khang</p>
+				</div>
+				<div class="container-header-box">
+					<h2><img src="public/image/dk.jpg" alt=""></h2>
+					<h3>Mai Duy Khang</h3>
+					<p>Mai Duy Khang</p>
+					<p>Mai Duy Khang</p>
+				</div>
+				<div class="container-header-box">
+					<h2><img src="public/image/dk.jpg" alt=""></h2>
+					<h3>Mai Duy Khang</h3>
+					<p>Mai Duy Khang</p>
+					<p>Mai Duy Khang</p>
+				</div>	
+			</div>
+        </div>
+        
+	</div>
+	<div class="footer">
+		<div class="footer-container">
+			<div class="footer-container-left">
+				<div class="footer-container-left-logo">
+					<img src="public/image/logo.png" alt="">
+				</div>
+				<ul>
+					<li>1105/5 3 tháng 2 quận 11, TP Hồ Chí Minh</li>
+					<li>0372176694</li>
+					<li>https://www.facebook.com/duy.khang.79230</li>
+				</ul>
+			</div>
+			<div class="footer-container-content">
+				<div class="footer-title">
+					<p>SẢN PHẨM</p>
+				</div>
+				<ul>
+					<li>Sầu riêng</li>
+					<li>Cam</li>
+					<li>Bơ</li>
+					<li>Trái cây theo mùa</li>
+				</ul>
+			</div>
+			<div class="footer-container-right">
+				<div class="footer-title">
+					<p>VỀ South Fruit</p>
+				</div>
+				<ul>
+					<li>Hỏi đáp</li>
+					<li>Giới thiệu</li>
+					<li>Chính sách chuyển giao</li>
+					<li>Chính sách đổi trả</li>
+					<li>Phương thức thanh toán</li>
+					<li>Liên hệ</li>
+				</ul>
+			</div>
+			<div class="footer-container-link">
+				<div class="footer-title">
+					<p>LIÊN KẾT</p>
+				</div>
+				
+				
+				<div class="fb-page" data-href="https://www.facebook.com/tien.phan.750983" data-tabs="timeline" data-width="100" data-height="200" data-small-header="false" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"></div>
+			</div>
+		</div>
+	</div>
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v5.0"></script>
+	<script src="public/js/style.js"></script>
+</body>
+</html>
