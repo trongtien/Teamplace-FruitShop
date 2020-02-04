@@ -9,3 +9,9 @@ for (let i = 0; i < navItem.length; i++) {
 		navbarDropdow.classList.toggle('active');
 	});
 }
+
+// let navbar = document.querySelector('.nav-bar').children;
+// for (let i = 0; i < navbar.length; i++) { 
+// 	let navitem = navbar[i].querySelector('.nav-item');
+// 	console.log(i);
+// };

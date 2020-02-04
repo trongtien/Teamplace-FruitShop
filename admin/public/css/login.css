@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(../img/backgroud_login.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+}
+.container{
+    width: 400px;
+    height: auto;
+    background: red;
+    background: rgba(0, 0, 0, .8);
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    padding: 35px;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+    display: block;
+}
+.container .icon{
+    position: absolute;
+    border-radius: 50%;
+    top: -80px;
+    left: 142px;
+    width: 100px;
+    height: 100px; 
+}
+.container .icon img{
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #333333;
+}
+.container h1{
+    color: rosybrown;
+    text-align: center;
+    font-size: 28px;
+}
+.input-box{
+    margin-top: 10px;
+}
+.input-box label{
+    color: seashell;
+    font-size: 18px;
+}
+.input-box input{
+    width: 100%;
+    height: 20px;
+    padding: 4px;
+    margin-top: 5px;
+}
+.input-box input::placeholder{
+    font-size: 18px;
+}
+.input-box:hover{
+    transition: 0.7s;
+    transform: scale(1.1,1.1);
+    margin-top: 10px;
+}
+.input-submit{
+    margin-top: 20px;
+    text-align: center;
+}
+.input-submit button{
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+}
+.input-submit:hover button{
+    background: #2646b1;
+    color: seashell;
+    transition: 0.5s;
+    transform: scale(1.3,1.3);
+    margin-top: 25px;
+}
