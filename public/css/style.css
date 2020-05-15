@@ -340,6 +340,21 @@
 @media screen and (max-width: 500px){
 	
 }
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
 
 /* slide */
 .slide{
@@ -393,14 +408,7 @@
 .slide .slide-btn .btn-next:hover i, .slide .slide-btn .btn-prev:hover i{
 	color: rgba(0, 0, 0, 0.9);
 }
-@media and screen (max-width: 800px){
-	.slide .slide-btn .btn-prev{
-		margin-top: 250%;
-	}
-	.slide .slide-btn .btn-next{
-	    margin-top: 250%;
-	}
-}
+
 .container{
 	height: auto;
 	width: 100%;
@@ -506,11 +514,135 @@
 	height: auto;
 	margin: auto;
 }
-@media and screen (max-width: 800px){
-	.product-container{
-		grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));	
-	}
+.form-detail {
+  padding-top: 50px;
+  display: flex;
+  align-items: flex-end;
 }
+.form-info{
+	width: 70%;
+}
+.form-detail .control-custom {
+  font-size: 14px;
+  color: #868686;
+  width: 100%;
+}
+
+.form-detail .group { 
+  position: relative;
+}
+
+.form-detail input {
+  display: block;
+  padding: 14px 0;
+  border: none;
+  border-bottom: 1px solid #d8d8d8;
+  margin-top: 26px;
+}
+
+.form-detail textarea {
+  display: block;
+  border: none;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.form-detail label {
+  font-size: 16px;
+  color: #868686;
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  top: 16px;
+}
+
+input:focus, 
+textarea:focus {
+  outline: none;
+}
+
+.form-detail .bar { 
+  position: relative; 
+  display: block; 
+  width: 97%; 
+}
+
+.bar::before,
+.bar::after {
+  content:'';
+  height: 2px; 
+  width: 0;
+  bottom: 1px; 
+  position: absolute;
+  background: #2cb680; 
+  transition: 0.2s ease all; 
+  -moz-transition: 0.2s ease all; 
+  -webkit-transition: 0.2s ease all;
+}
+
+.bar::before {
+  left:50%;
+}
+
+.bar::after {
+  right:50%; 
+}
+
+.form-detail input:focus ~ .bar::before,
+.form-detail input:focus ~ .bar::after,
+.form-detail textarea:focus ~ .bar::before,
+.form-detail textarea:focus ~ .bar::after {
+  width:50%;
+}
+.info-user{
+	margin-left: 20%;
+}
+.bar::before,
+.bar::after {
+  content:'';
+  height: 2px; 
+  width: 0;
+  bottom: 1px; 
+  position: absolute;
+  background: #2cb680; 
+  transition: 0.2s ease all; 
+  -moz-transition: 0.2s ease all; 
+  -webkit-transition: 0.2s ease all;
+}
+.form-detail input:focus ~ .bar::before,
+.form-detail input:focus ~ .bar::after,
+.form-detail textarea:focus ~ .bar::before,
+.form-detail textarea:focus ~ .bar::after {
+  width:50%;
+}
+.form-button {
+	margin-top: 20px;
+	margin-left: 30%;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.form-button button{
+	font-size: 20px;
+}
+
+.form-detail label {
+  font-size: 14px;
+  color: #868686;
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  top: 16px;
+  transition: 0.2s ease all; 
+  -moz-transition: 0.2s ease all; 
+  -webkit-transition: 0.2s ease all;
+}
+.form-detail input:focus ~ label, 
+.form-detail input:valid ~ label,
+.form-detail textarea:focus ~ label,
+.form-detail textarea:valid ~ label {
+  top: -16px;
+  color: #2cb680;
+}
+
 .product-item{
 	background: #FFFFFF;
 	border: 1px solid #3333;
